@@ -1,0 +1,152 @@
+/* =========================
+   GLOBAL CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px; /* mobile-first padding */
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+}
+
+.top-bar-content {
+  width: 100%;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.top-bar .left span {
+  margin-right: 15px;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #706e6e;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav a.active {
+  color: #00bcd4;
+  font-weight: 600;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+========================= */
+
+@media (max-width: 768px) {
+
+  /* Top bar stacks cleanly */
+  .top-bar-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 0;
+  }
+
+  .top-bar .left span {
+    display: block;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  /* Header stacks cleanly */
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .logo img {
+    height: 36px; /* better mobile scale */
+  }
+
+  /* Nav wraps instead of looking broken */
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+}

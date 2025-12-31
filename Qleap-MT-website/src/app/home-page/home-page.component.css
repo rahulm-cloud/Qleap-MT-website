@@ -1,0 +1,47 @@
+/* =========================
+   Global Layout System
+========================= */
+
+.page-wrapper {
+  display: block;
+}
+
+/* Section spacing */
+.section {
+  padding: 10px 0;
+}
+
+/* Container (matches footer width logic) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Optional section backgrounds */
+.section-hero {
+  background: #f9fafb;
+}
+
+.section-about {
+  background: #ffffff;
+}
+
+.section-products {
+  background: #f5f7fa;
+}
+
+.section-usecases {
+  background: #ffffff;
+}
+
+.section-contact {
+  background: #f9fafb;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}

@@ -1,0 +1,125 @@
+/* SECTION */
+.why-qleap-section {
+  background: #1e22aa;
+  padding: 90px 20px;
+  color: #ffffff;
+}
+
+.why-qleap-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: start;
+}
+
+/* HEADER */
+.why-label {
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.why-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-subtitle {
+  font-size: 15px;
+  color: #c7d2fe;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* LEFT IMAGE */
+.why-visual img {
+  max-width: 100%;
+  display: block;
+}
+
+/* TECH STACK */
+.why-tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  text-align: left;
+}
+
+.tech-block {
+  background: transparent;
+}
+
+.tech-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tech-icon {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* PILLS */
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-pills span {
+  background: #ffffff;
+  color: #1e22aa;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* FOOT */
+.why-footer {
+  margin-top: 60px;
+}
+
+.why-footer h3 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.why-footer p {
+  font-size: 16px;
+  color: #e0e7ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-tech {
+    grid-template-columns: 1fr;
+  }
+
+  .why-title {
+    font-size: 30px;
+  }
+}
