@@ -5,29 +5,29 @@
 
 .our-product-container {
   max-width: 1200px;
-  margin: auto;
-  text-align: center;
+  margin-top: -30px;
+  margin-left: 10px;
 }
 
 /* HEADER */
 .section-label {
   color: #fbbf24;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   display: block;
   margin-bottom: 12px;
 }
 
 .section-title {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
-  color: #c7d2fe;
+  color: #fbbf24;
   font-size: 15px;
   margin-bottom: 60px;
 }
@@ -42,29 +42,30 @@
 /* CARD */
 .product-card {
   background: #ffffff;
-  border-radius: 12px;
   padding: 30px 26px 36px;
-  text-align: left;
+  text-align: start;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   display: flex;
   flex-direction: column;
 }
 
 .card-icon {
+  justify-content: center;
+  display: flex;
   font-size: 28px;
-  margin-bottom: 14px;
 }
 
 .product-card h4 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 500;
   margin-bottom: 6px;
   color: #111827;
+  text-align: center;
 }
 
 .card-desc {
-  font-size: 14px;
-  color: #6b7280;
+  font-size: 15px;
+  color: #080809;
   margin-bottom: 14px;
 }
 

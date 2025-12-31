@@ -1,4 +1,6 @@
-/* SECTION */
+/* ================================
+   WHY QLEAP SECTION
+================================ */
 .why-qleap-section {
   background: #1e22aa;
   padding: 90px 20px;
@@ -11,115 +13,179 @@
   text-align: start;
 }
 
-/* HEADER */
+/* ================================
+   HEADER
+================================ */
 .why-label {
   color: #fbbf24;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   display: block;
   margin-bottom: 12px;
 }
 
 .why-title {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
+  color: #fbbf24;
   margin-bottom: 10px;
 }
 
 .why-subtitle {
   font-size: 15px;
-  color: #c7d2fe;
+  color: #ffffff;
   margin-bottom: 60px;
 }
 
-/* GRID */
+/* ================================
+   GRID LAYOUT
+================================ */
 .why-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 50px;
-  align-items: center;
-  max-width: 1050px;
+  grid-template-columns: 25% 75%;
+  align-items: flex-start;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* LEFT IMAGE */
+
+/* ================================
+   LEFT VISUAL
+================================ */
+
 .why-visual img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   display: block;
+  margin-left: -17px;
 }
 
 /* TECH STACK */
-.why-tech {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 26px;
-  text-align: left;
-}
-
-.tech-block {
-  background: transparent;
-}
 
 .tech-title {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  gap: 6px;
+  font-weight: 400;
 }
 
 .tech-icon {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 6px;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-/* PILLS */
-.tech-pills {
+  width: 32px;
+  height: 32px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  align-items: center;
 }
 
+.tech-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.why-tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 48px; /* better spacing like design */
+  margin-right: 50px;
+}
+
+/* TECH PILLS */
+.tech-pills {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 10px 14px;
+  margin-top: 10px;
+}
+
+/* Make blocks feel balanced */
+.tech-block {
+  padding-bottom: 6px;
+}
+
+
+/* ================================
+   TECH PILLS (EQUAL SIZE – IMAGE MATCH)
+================================ */
+.tech-pills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ equal width pills */
+  gap: 10px 12px;
+}
+
+/* Pill style */
 .tech-pills span {
   background: #ffffff;
   color: #1e22aa;
   font-size: 12px;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 6px;
   font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
 }
 
-/* FOOT */
+/* FOOTER */
 .why-footer {
-  margin-top: 60px;
+  display: flex;           /* ✅ missing */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -90px;           /* ✅ prevent extra gap */
 }
 
+/* BIG NUMBER */
 .why-footer h3 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 6px;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 12px 250px;  /* ✅ remove top margin */
+  color: #ffffff;
 }
 
+/* LABEL TEXT */
 .why-footer p {
-  font-size: 16px;
+  font-size: 28px;
+  font-weight: 500;
   color: #e0e7ff;
+  letter-spacing: 0.3px;
+  margin: 0 0 0 250px;     /* ✅ remove top margin */
 }
 
-/* RESPONSIVE */
+/* ================================
+   RESPONSIVE
+================================ */
 @media (max-width: 992px) {
   .why-grid {
     grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .why-visual {
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .why-visual img {
+    max-width: 240px;
   }
 
   .why-tech {
     grid-template-columns: 1fr;
   }
 
+  .why-footer {
+    max-width: 100%;
+    margin-top: 60px;
+  }
+
   .why-title {
     font-size: 30px;
+  }
+
+  .tech-pills {
+    grid-template-columns: repeat(2, max-content);
   }
 }
