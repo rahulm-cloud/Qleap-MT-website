@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-technology-stack',
-  imports: [],
+  standalone:true,
+  imports: [RouterLink],
   templateUrl: './technology-stack.component.html',
   styleUrl: './technology-stack.component.css'
 })

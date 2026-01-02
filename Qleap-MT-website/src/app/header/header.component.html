@@ -35,20 +35,30 @@
 </div>
 
 <!-- HEADER -->
+<!-- HEADER -->
 <header class="header">
     <div class="container header-content">
+
+        <!-- HAMBURGER (MOBILE ONLY) -->
+        <button class="menu-toggle" aria-label="Menu" (click)="toggleMenu()">
+            ☰
+        </button>
+
+
+        <!-- LOGO -->
         <div class="logo">
             <img src="assets/logo/logo.svg" alt="Logo">
         </div>
 
-        <nav class="nav">
-            <a routerLink="../home-slider" routerLinkActive="active">Home</a>
-            <a routerLink="/about" routerLinkActive="active">About Us</a>
-            <a routerLink="/our-product" routerLinkActive="active">Our Product</a>
-            <a routerLink="/our-capabilities" routerLinkActive="active">Our Capabilities</a>
-            <a routerLink="/technology-stack" routerLinkActive="active">Product Suit</a>
-            <a routerLink="/contact-us" routerLinkActive="active">Contact</a>
+        <!-- NAV -->
+        <nav class="nav" [class.open]="isMenuOpen">
+            <a routerLink="/home-page" [class.active]="activeFragment === 'about'" fragment="about" (click)="closeMenu()">About Us</a>
+            <a routerLink="/home-page" [class.active]="activeFragment === 'product'" fragment="product" (click)="closeMenu()">Our Product</a>
+            <a routerLink="/home-page" [class.active]="activeFragment === 'capabilities'" fragment="capabilities" (click)="closeMenu()">Our Capabilities</a>
+            <a routerLink="/home-page" [class.active]="activeFragment === 'technology'" fragment="technology" (click)="closeMenu()">Product Suit</a>
+            <a routerLink="/home-page" [class.active]="activeFragment === 'contact-us'" fragment="contact-us" (click)="closeMenu()">Contact</a>
         </nav>
+
 
     </div>
 </header>

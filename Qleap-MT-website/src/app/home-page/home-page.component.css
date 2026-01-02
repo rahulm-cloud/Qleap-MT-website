@@ -8,7 +8,7 @@
 
 /* Section spacing */
 .section {
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 /* Container (matches footer width logic) */
@@ -42,6 +42,6 @@
 /* Responsive spacing */
 @media (max-width: 768px) {
   .section {
-    padding: 50px 0;
+    padding: 0px 0;
   }
 }

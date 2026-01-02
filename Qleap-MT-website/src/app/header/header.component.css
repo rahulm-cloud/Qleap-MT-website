@@ -1,3 +1,6 @@
+.menu-toggle {
+  display: none;
+}
 /* =========================
    GLOBAL CONTAINER
 ========================= */
@@ -102,51 +105,159 @@
   color: #00bcd4;
   font-weight: 600;
 }
-
-/* =========================
-   MOBILE RESPONSIVE FIXES
-========================= */
-
+/* ===============================
+   HEADER RESPONSIVE FIX ONLY
+================================ */
 @media (max-width: 768px) {
 
-  /* Top bar stacks cleanly */
+  /* TOP BAR CLEANUP */
+  .top-bar {
+    padding: 8px 12px;
+  }
+
   .top-bar-content {
     flex-direction: column;
-    align-items: flex-start;
     gap: 6px;
-    padding: 8px 0;
+    text-align: center;
   }
 
-  .top-bar .left span {
-    display: block;
-    margin-right: 0;
-    font-size: 14px;
+  .top-bar .left,
+  .top-bar .right {
+    justify-content: center;
   }
 
-  .social-icons {
-    gap: 10px;
-  }
-
-  /* Header stacks cleanly */
+  /* HEADER LAYOUT */
   .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center logo */
+    position: relative;
+    padding: 12px 0;
   }
 
-  .logo img {
-    height: 36px; /* better mobile scale */
+  /* LOGO CENTER */
+  .header-content .logo,
+  .header-content app-branding {
+    margin: 0 auto;
   }
 
-  /* Nav wraps instead of looking broken */
-  .nav {
+  /* HAMBURGER MENU */
+  .menu-toggle,
+  .hamburger,
+  .menu-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000 !important; /* 🔥 black icon */
+  }
+
+  /* If using SVG or icon font */
+  .menu-toggle svg,
+  .hamburger svg,
+  .menu-icon svg {
+    fill: #000 !important;
+    stroke: #000 !important;
+  }
+
+  /* NAV MENU (STACKED) */
+  nav,
+  .nav-menu {
     width: 100%;
-    flex-wrap: wrap;
-    gap: 12px;
+    text-align: center;
+  }
+}
+
+
+/* ===============================
+   MOBILE HEADER FIX ONLY
+================================ */
+@media (max-width: 768px) {
+
+  /* Header layout */
+  .header-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center logo */
+    padding: 12px 0;
+  }
+
+  /* HAMBURGER BUTTON */
+  .menu-toggle {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    padding: 0;
+
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+
+    color: #000; /* BLACK */
+  }
+
+  /* Hide desktop nav on mobile */
+  .nav {
+    display: none;
+  }
+
+  /* TOP BAR CLEANUP (mobile only) */
+  .top-bar {
+    padding: 8px 12px;
+  }
+
+  .top-bar-content {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .top-bar .left,
+  .top-bar .right {
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   MOBILE MENU TOGGLE
+================================ */
+@media (max-width: 768px) {
+
+  /* Hidden by default */
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 16px 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    z-index: 999;
+  }
+
+  /* When hamburger clicked */
+  .nav.open {
+    display: flex;
   }
 
   .nav a {
-    margin-left: 0;
+    padding: 12px 20px;
+    text-align: center;
     font-size: 16px;
   }
 }
+
+/* SHOW HAMBURGER ONLY ON MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
