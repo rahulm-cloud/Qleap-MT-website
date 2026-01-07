@@ -1,11 +1,13 @@
-<!-- TOP BAR -->
-<div class="top-bar">
+<div class="site-header">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
     <div class="container top-bar-content">
-        <div class="left">
-            <span>📧 abcd&#64;gmail.com</span>
-            <span>📞 +91 1234567890</span>
-        </div>
-        <div class="right social-icons">
+      <div class="left">
+        <span>📞 +91 1234567890</span>
+        <span>📧 abcd&#64;gmail.com</span>
+      </div>
+      <div class="right social-icons">
             <!-- Facebook -->
             <a href="#" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" class="social-icon">
@@ -30,28 +32,20 @@
                 </svg>
             </a>
         </div>
-
     </div>
-</div>
+  </div>
 
-<!-- HEADER -->
-<!-- HEADER -->
-<header class="header">
+  <!-- HEADER -->
+  <header class="header">
     <div class="container header-content">
 
-        <!-- HAMBURGER (MOBILE ONLY) -->
-        <button class="menu-toggle" aria-label="Menu" (click)="toggleMenu()">
-            ☰
-        </button>
+      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
 
+      <div class="logo">
+        <img src="assets/logo/logo.svg" alt="Logo">
+      </div>
 
-        <!-- LOGO -->
-        <div class="logo">
-            <img src="assets/logo/logo.svg" alt="Logo">
-        </div>
-
-        <!-- NAV -->
-        <nav class="nav" [class.open]="isMenuOpen">
+      <nav class="nav" [class.open]="isMenuOpen">
             <a routerLink="/home-page" [class.active]="activeFragment === 'about'" fragment="about" (click)="closeMenu()">About Us</a>
             <a routerLink="/home-page" [class.active]="activeFragment === 'product'" fragment="product" (click)="closeMenu()">Our Product</a>
             <a routerLink="/home-page" [class.active]="activeFragment === 'capabilities'" fragment="capabilities" (click)="closeMenu()">Our Capabilities</a>
@@ -59,6 +53,7 @@
             <a routerLink="/home-page" [class.active]="activeFragment === 'contact-us'" fragment="contact-us" (click)="closeMenu()">Contact</a>
         </nav>
 
-
     </div>
-</header>
+  </header>
+
+</div>

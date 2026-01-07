@@ -2,20 +2,9 @@
    Global Layout System
 ========================= */
 
-.page-wrapper {
-  display: block;
-}
-
-/* Section spacing */
-.section {
-  padding: 0px 0;
-}
-
 /* Container (matches footer width logic) */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+  max-width: 1440px;
 }
 
 /* Optional section backgrounds */

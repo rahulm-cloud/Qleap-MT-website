@@ -8,7 +8,7 @@
 }
 
 .why-qleap-container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   text-align: start;
 }
@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: 25% 75%;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@
   max-width: 300px;
   height: auto;
   display: block;
-  margin-left: -17px;
+  margin-left: -20px;
 }
 
 /* TECH STACK */

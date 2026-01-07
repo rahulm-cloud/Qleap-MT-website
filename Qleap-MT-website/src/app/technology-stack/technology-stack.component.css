@@ -3,11 +3,11 @@
 ========================= */
 .hero-section {
   background: #ffffff;
-  padding: 110px 0 90px;
+  padding: 40px 0 0px;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -16,6 +16,7 @@
 ========================= */
 .hero-header {
   max-width: 1000px;
+  margin-left: 20px;
   /* margin-bottom: 48px; */
 }
 
@@ -58,6 +59,7 @@
 ========================= */
 .hero-left {
   max-width: 520px;
+  margin-left: 20px;
 }
 
 /* BUTTONS */

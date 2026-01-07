@@ -3,18 +3,19 @@
 }
 
 .about-container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1440px;
+  margin: 0 auto; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
+
 /* LEFT IMAGE */
 .about-left {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .about-image {

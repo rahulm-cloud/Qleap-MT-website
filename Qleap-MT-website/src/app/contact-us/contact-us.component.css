@@ -35,7 +35,7 @@ textarea.ng-valid.ng-touched {
 
 /* MAIN GRID */
 .contact-container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;

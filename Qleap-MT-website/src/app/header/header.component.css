@@ -14,12 +14,6 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding: 0 24px;
-  }
-}
-
 /* =========================
    TOP BAR
 ========================= */
@@ -108,6 +102,13 @@
 /* ===============================
    HEADER RESPONSIVE FIX ONLY
 ================================ */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 768px) {
 
   /* TOP BAR CLEANUP */
